@@ -1,0 +1,54 @@
+# Food Donation System Installation Guide
+
+This guide will help you set up the Food Donation Management System with XAMPP.
+
+## Prerequisites
+- XAMPP installed on your computer (Apache, MySQL, PHP)
+
+## Installation Steps
+
+1. **Copy the project to htdocs**
+   - Copy all files from this folder to XAMPP's htdocs directory
+   - Typically located at `C:\xampp\htdocs\food_donation` (create 'food_donation' folder)
+
+2. **Start XAMPP services**
+   - Start Apache and MySQL from the XAMPP Control Panel
+
+3. **Setup the database**
+   - Open your browser and navigate to `http://localhost/food_donation/setup.php`
+   - This will create the necessary database and tables
+   - It will also create an admin account with:
+     * Email: admin@fooddonation.com
+     * Password: admin123
+
+4. **Access the website**
+   - Open your browser and go to `http://localhost/food_donation/`
+   - The website should now be running
+
+## Key Features
+- User registration and login
+- Food donation submissions
+- Agent dashboard for donation pickups
+- Admin dashboard to manage users, agents, and donations
+- Contact form
+
+## User Roles
+1. **Users**
+   - Can register accounts and log in
+   - Can submit food donations
+   - Can view their donation history
+   
+2. **Agents**
+   - Can view and manage assigned donations
+   - Can mark donations as completed
+
+3. **Admin**
+   - Can view all users, donations, and messages
+   - Can create agent accounts
+   - Can assign donations to agents
+   - Can manage the entire system
+
+## Troubleshooting
+- If you encounter database connection errors, check if MySQL is running
+- Verify that the database credentials in config.php match your XAMPP setup
+- Make sure all files have proper permissions 
